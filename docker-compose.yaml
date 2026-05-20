@@ -2,8 +2,6 @@ version: '3.8'
 
 services:
   web:
-    image: nginx:alpine
-    volumes:
-      - ./index.html:/usr/share/nginx/html/index.html:ro
+    build: .
     ports:
       - "80"
